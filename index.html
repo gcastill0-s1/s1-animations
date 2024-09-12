@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Refresh" content="10; URL=index.html" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="5; URL=index.html">
     <title>SentinelOne</title>
 
     <style>
-      body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-      }
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222;
+            background: linear-gradient(27deg, #222222, #6100FF66, #4500B666, #222222), url(img/background.svg), url(img/background-path.svg);
+            /* background: radial-gradient(#222, #4500B6, #6100FF); */
+            /* background: radial-gradient(#4500B6, #222); */
+            /* background-image: url(img/background-path.svg); */
+            background-position: center;
+            overflow: hidden;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="loader">
-      <img alt="SentinelOne Logo" />
+        <img alt="SentinelOne Logo">
     </div>
 
     <script>
-      var url = "s1_logo.svg?r=" + Math.random();
-      document.querySelector("#loader img").setAttribute("src", url);
+
+        var url = "img/s1_logo_light.svg?r=" + Math.random();
+        document.querySelector("#loader img").setAttribute("src", url);
+
     </script>
-  </body>
+</body>
+
 </html>
